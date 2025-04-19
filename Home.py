@@ -64,7 +64,7 @@ def main():
         run_subapp(drafting_app, "Drafting")
     
     st.sidebar.markdown("---")
-    st.sidebar.write("© 2025 LegalSaathi. All rights reserved.")
+    st.sidebar.write("© 2025 LegalEase. All rights reserved.")
 
 def run_subapp(app_module, app_name):
     if app_module:
