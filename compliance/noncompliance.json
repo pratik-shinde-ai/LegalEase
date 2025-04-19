@@ -1,0 +1,387 @@
+{
+    "CompaniesAct2013_NonComplianceRules": [
+      {
+        "section": "4",
+        "rule": "Improper use of the words 'Limited' or 'Private Limited'",
+        "penalty": {
+          "offender": "Fine of Rs. 500 for each day of default"
+        }
+      },
+      {
+        "section": "12",
+        "rule": "Failure to mention name and registered office details on business letters, documents",
+        "penalty": {
+          "company": "Fine of Rs. 1,000 to Rs. 5,000 per day"
+        }
+      },
+      {
+        "section": "15",
+        "rule": "Commencing business before filing declaration",
+        "penalty": {
+          "company": "Rs. 50,000",
+          "officers": "Rs. 1,000 per day of default"
+        }
+      },
+      {
+        "section": "26",
+        "rule": "Contravention of provisions related to prospectus",
+        "penalty": {
+          "company": "Rs. 50,000 to Rs. 3 lakhs",
+          "offender": "Imprisonment up to 3 years or fine of Rs. 50,000 to Rs. 3 lakhs, or both"
+        }
+      },
+      {
+        "section": "39",
+        "rule": "Failure to state in prospectus the minimum subscription and amount payable on application",
+        "penalty": {
+          "company": "Refund of all money received",
+          "officers": "Liable to penalty"
+        }
+      },
+      {
+        "section": "42",
+        "rule": "Contravention of provisions related to private placement",
+        "penalty": {
+          "company": "Amount involved or Rs. 2 crores, whichever is higher",
+          "officers": "Imprisonment up to 2 years or fine up to Rs. 50 lakhs, or both"
+        }
+      },
+      {
+        "section": "46",
+        "rule": "Fraudulently issuing duplicate share certificates",
+        "penalty": {
+          "offender": "Fine of Rs. 5 times the face value of shares"
+        }
+      },
+      {
+        "section": "56",
+        "rule": "Failure to register transfer of securities within prescribed time",
+        "penalty": {
+          "company": "Rs. 25,000",
+          "officers": "Rs. 5,000 for each day of default"
+        }
+      },
+      {
+        "section": "59",
+        "rule": "Wrongful withholding of property including money, dividend, certificate",
+        "penalty": {
+          "company": "Rs. 1 lakh",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "62",
+        "rule": "Violation of rights issue provisions",
+        "penalty": {
+          "company": "Rs. 1,000 per day up to Rs. 5 lakhs",
+          "officers": "Rs. 1,000 per day up to Rs. 3 lakhs"
+        }
+      },
+      {
+        "section": "67",
+        "rule": "Buying company's own shares or providing financial assistance for purchase of its shares",
+        "penalty": {
+          "company": "Fine up to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 3 years and fine up to Rs. 25 lakhs"
+        }
+      },
+      {
+        "section": "73",
+        "rule": "Failure to repay deposits or interest",
+        "penalty": {
+          "company": "In addition to deposit amount, Rs. 1 crore or twice the deposit amount, whichever is lower",
+          "officers": "Imprisonment up to 7 years or fine of Rs. 25 lakhs to Rs. 2 crores, or both"
+        }
+      },
+      {
+        "section": "77",
+        "rule": "Failure to register charges",
+        "penalty": {
+          "company": "Rs. 1 lakh (min) to Rs. 10 lakhs (max)",
+          "officers": "Up to Rs. 5 lakhs"
+        }
+      },
+      {
+        "section": "86",
+        "rule": "Punishment for fraud in relation to registration of charges",
+        "penalty": {
+          "offender": "Imprisonment of 6 months to 10 years"
+        }
+      },
+      {
+        "section": "88",
+        "rule": "Failure to maintain register of members",
+        "penalty": {
+          "company": "Rs. 3 lakhs to Rs. 25 lakhs",
+          "officers": "Rs. 50,000 to Rs. 5 lakhs"
+        }
+      },
+      {
+        "section": "92",
+        "rule": "Failure to file annual return",
+        "penalty": {
+          "company": "Up to Rs. 50,000",
+          "continuingOffense": "Rs. 100 per day",
+          "officers": "Up to Rs. 50,000"
+        }
+      },
+      {
+        "section": "99",
+        "rule": "Default in holding Annual General Meeting",
+        "penalty": {
+          "company": "Up to Rs. 1 lakh",
+          "officers": "Up to Rs. 25,000"
+        }
+      },
+      {
+        "section": "105",
+        "rule": "Default in providing proxy forms to members",
+        "penalty": {
+          "offender": "Fine up to Rs. 5,000"
+        }
+      },
+      {
+        "section": "117",
+        "rule": "Failure to file resolutions and agreements with Registrar",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 5 lakhs",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "118",
+        "rule": "Failure to maintain minutes of proceedings",
+        "penalty": {
+          "company": "Rs. 25,000",
+          "officers": "Rs. 5,000"
+        }
+      },
+      {
+        "section": "119",
+        "rule": "Failure to allow inspection of minute-books of general meeting",
+        "penalty": {
+          "offender": "Fine up to Rs. 5,000"
+        }
+      },
+      {
+        "section": "124",
+        "rule": "Failure to transfer unpaid dividend to Unpaid Dividend Account",
+        "penalty": {
+          "company": "12% interest per annum",
+          "officers": "Rs. 1 lakh to Rs. 5 lakhs"
+        }
+      },
+      {
+        "section": "127",
+        "rule": "Failure to distribute dividends within 30 days",
+        "penalty": {
+          "director": "Imprisonment up to 2 years and fine of Rs. 1,000 per day"
+        }
+      },
+      {
+        "section": "128",
+        "rule": "Failure to keep proper books of account",
+        "penalty": {
+          "officers": "Imprisonment up to 1 year or fine of Rs. 50,000 to Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "129",
+        "rule": "Failure to comply with financial statement requirements",
+        "penalty": {
+          "managingDirector": "Imprisonment up to 1 year or fine Rs. 50,000 to Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "134",
+        "rule": "Failure to attach Board's report to financial statement",
+        "penalty": {
+          "company": "Rs. 50,000 to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 3 years or fine of Rs. 50,000 to Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "137",
+        "rule": "Failure to file financial statements",
+        "penalty": {
+          "company": "Rs. 1,000 per day (max Rs. 10 lakhs)",
+          "managingDirector": "Up to Rs. 1 lakh",
+          "cfo": "Up to Rs. 1 lakh"
+        }
+      },
+      {
+        "section": "140",
+        "rule": "Non-compliance with provisions for removal and resignation of auditor",
+        "penalty": {
+          "company": "Rs. 50,000 or auditor's remuneration, whichever is less",
+          "officers": "Imprisonment up to 1 year or fine of Rs. 10,000 to Rs. 1 lakh, or both"
+        }
+      },
+      {
+        "section": "143",
+        "rule": "Auditor's failure to report fraud",
+        "penalty": {
+          "auditor": "Fine of Rs. 1 lakh to Rs. 25 lakhs"
+        }
+      },
+      {
+        "section": "147",
+        "rule": "Failure of company to comply with auditing standards",
+        "penalty": {
+          "company": "Rs. 25,000 to Rs. 5 lakhs",
+          "officers": "Imprisonment up to 1 year or fine of Rs. 10,000 to Rs. 1 lakh, or both"
+        }
+      },
+      {
+        "section": "152",
+        "rule": "Default in complying with provisions for appointment of directors",
+        "penalty": {
+          "company": "Rs. 50,000",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "159",
+        "rule": "Failure to file return of appointment of director",
+        "penalty": {
+          "company": "Rs. 50,000",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "165",
+        "rule": "Accepting directorships beyond specified limit",
+        "penalty": {
+          "director": "Rs. 5,000 per day of default"
+        }
+      },
+      {
+        "section": "172",
+        "rule": "Non-compliance with provisions relating to appointment of directors",
+        "penalty": {
+          "company": "Rs. 50,000",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "178",
+        "rule": "Non-compliance with constitution of Nomination and Remuneration Committee",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 5 lakhs",
+          "officers": "Imprisonment up to 1 year or fine of Rs. 25,000 to Rs. 1 lakh, or both"
+        }
+      },
+      {
+        "section": "184",
+        "rule": "Failure to disclose interest by director",
+        "penalty": {
+          "director": "Up to Rs. 1 lakh"
+        }
+      },
+      {
+        "section": "185",
+        "rule": "Contravention of prohibition on loans to directors",
+        "penalty": {
+          "company": "Rs. 5 lakhs to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 6 months or fine of Rs. 5 lakhs to Rs. 25 lakhs, or both"
+        }
+      },
+      {
+        "section": "187",
+        "rule": "Failure to maintain register of investments not held in company's name",
+        "penalty": {
+          "company": "Rs. 25,000 to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 6 months or fine of Rs. 25,000 to Rs. 1 lakh, or both"
+        }
+      },
+      {
+        "section": "194",
+        "rule": "Prohibition on forward dealings in securities of company by director or KMP",
+        "penalty": {
+          "director": "Imprisonment up to 2 years or fine of Rs. 1 lakh to Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "195",
+        "rule": "Prohibition on insider trading of securities",
+        "penalty": {
+          "insider": "Imprisonment of 2 to 5 years or fine of Rs. 5 lakhs to Rs. 25 crores, or both"
+        }
+      },
+      {
+        "section": "197",
+        "rule": "Managerial remuneration in excess of prescribed limits",
+        "penalty": {
+          "director": "Refund excess amount to company"
+        }
+      },
+      {
+        "section": "203",
+        "rule": "Failure to appoint Key Managerial Personnel",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 5 lakhs",
+          "directors": "Rs. 50,000 (max Rs. 1,000 per day if contravention continues)"
+        }
+      },
+      {
+        "section": "204",
+        "rule": "Non-compliance with secretarial audit for bigger companies",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 5 lakhs",
+          "officers": "Rs. 50,000"
+        }
+      },
+      {
+        "section": "206",
+        "rule": "Failure to furnish information or explanation to Registrar or inspector",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 5 lakhs",
+          "officers": "Imprisonment up to 1 year and fine of Rs. 25,000 to Rs. 1 lakh"
+        }
+      },
+      {
+        "section": "212",
+        "rule": "Investigation of company's affairs in other cases",
+        "penalty": {
+          "offender": "Imprisonment up to 6 months or fine up to Rs. 25,000, or both"
+        }
+      },
+      {
+        "section": "217",
+        "rule": "Failure to provide assistance in connection with investigation",
+        "penalty": {
+          "offender": "Imprisonment up to 1 year and fine up to Rs. 25,000"
+        }
+      },
+      {
+        "section": "221",
+        "rule": "Non-compliance with restrictions on securities",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 6 months or fine of Rs. 25,000 to Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "222",
+        "rule": "Non-compliance with provisions on freezing of assets of company",
+        "penalty": {
+          "offender": "Imprisonment up to 3 years or fine of Rs. 5 lakhs, or both"
+        }
+      },
+      {
+        "section": "232",
+        "rule": "Contravention of Tribunal's order on mergers and amalgamations",
+        "penalty": {
+          "company": "Rs. 1 lakh to Rs. 25 lakhs",
+          "officers": "Imprisonment up to 1 year or fine of Rs. 1 lakh to Rs. 3 lakhs, or both"
+        }
+      },
+      {
+        "section": "238",
+        "rule": "Non-registration of offer of schemes involving transfer of shares",
+        "penalty": {
+          "director": "Imprisonment up to 1 year or fine of Rs. 25,000 to Rs. 5 lakhs, or both"
+        }
+      }
+    ]
+}

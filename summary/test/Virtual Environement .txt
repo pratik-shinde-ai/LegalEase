@@ -1,0 +1,3 @@
+python -m venv summarizer_env
+source summarizer_env/bin/activate  # On Windows, use: summarizer_env\Scripts\activate
+pip install streamlit PyMuPDF python-docx Pillow pandas scikit-learn sumy nltk transformers torch

@@ -1,0 +1,1 @@
+pip install streamlit PyMuPDF python-docx Pillow pandas scikit-learn sumy nltk transformers torch

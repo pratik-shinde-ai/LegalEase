@@ -1,0 +1,11 @@
+PyMuPDF
+streamlit
+PyPDF2
+python-docx
+Pillow
+pytesseract
+fitz
+fpdf
+groq
+json
+os
