@@ -5,7 +5,7 @@ import sys
 import traceback
 
 # Set page config at the very beginning
-st.set_page_config(page_title="LegalSaathi Multi-App", layout="wide")
+st.set_page_config(page_title="LegalEase Multi-App", layout="wide")
 
 # Add the project root to the Python path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -64,7 +64,7 @@ def main():
         run_subapp(drafting_app, "Drafting")
     
     st.sidebar.markdown("---")
-    st.sidebar.write("© 2024 LegalSaathi. All rights reserved.")
+    st.sidebar.write("© 2025 LegalSaathi. All rights reserved.")
 
 def run_subapp(app_module, app_name):
     if app_module:
