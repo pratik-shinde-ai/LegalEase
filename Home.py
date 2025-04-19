@@ -27,7 +27,7 @@ compliance_app = load_module("compliance.app")
 drafting_app = load_module("drafting.app")
 
 def main():
-    st.title("Welcome to LegalSaathi")
+    st.title("Welcome to LegalEase")
     
     # Initialize session state for navigation
     if 'page' not in st.session_state:
