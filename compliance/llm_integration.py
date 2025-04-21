@@ -58,7 +58,7 @@ class LLMIntegration:
         """
 
         response = self.client.chat.completions.create(
-            model="gemma2-9b-it",
+            model="llama-guard-3-8b",
             messages=[
                 {"role": "system", "content": "You are an AI legal assistant specialized in contract analysis and compliance with Indian laws."},
                 {"role": "user", "content": prompt}
