@@ -1,6 +1,7 @@
 import groq
 import json
 import os
+import re  # For extracting JSON
 
 class LLMIntegration:
     def __init__(self, api_key=None):
@@ -9,6 +10,16 @@ class LLMIntegration:
         if api_key is None:
             raise ValueError("GROQ API key not provided and not found in environment variables")
         self.client = groq.Groq(api_key=api_key)
+
+    def _extract_json(self, text):
+        """Extract JSON object from a string using regex."""
+        try:
+            json_match = re.search(r"\{(?:[^{}]|(?R))*\}", text, re.DOTALL)
+            if json_match:
+                return json.loads(json_match.group(0))
+        except json.JSONDecodeError as e:
+            print("JSON extraction failed:", e)
+        return None
 
     def analyze_contract(self, contract_text):
         prompt = f"""
@@ -22,39 +33,40 @@ class LLMIntegration:
         Please provide the analysis in the following JSON structure:
         {{
             "summary": "A brief summary of the entire contract",
-            "balance_score": A number between 0 and 100 representing how balanced the contract is (0 = heavily favors one party, 100 = perfectly balanced),
+            "balance_score": 0-100,
             "compliance_check": {{
                 "Companies_Act_2013": {{
                     "compliant": true/false,
-                    "issues": ["List of compliance issues with sections of the Companies Act, 2013"]
+                    "issues": ["..."]
                 }},
                 "Code_of_Wages_2019": {{
                     "compliant": true/false,
-                    "issues": ["List of compliance issues with sections of the Code of Wages, 2019"]
+                    "issues": ["..."]
                 }},
                 "OSH_Code_2020": {{
                     "compliant": true/false,
-                    "issues": ["List of compliance issues with the Occupational Safety, Health and Working Conditions Code, 2020"]
+                    "issues": ["..."]
                 }},
                 "Social_Security_Code_2020": {{
                     "compliant": true/false,
-                    "issues": ["List of compliance issues with the Code on Social Security, 2020"]
+                    "issues": ["..."]
                 }},
                 "Industrial_Relations_Code_2020": {{
                     "compliant": true/false,
-                    "issues": ["List of compliance issues with the Industrial Relations Code, 2020"]
+                    "issues": ["..."]
                 }}
             }},
             "key_clauses": [
                 {{
-                    "type": "The type of clause",
-                    "content": "The text of the clause",
-                    "analysis": "A brief analysis of the clause, including any potential issues or risks",
-                    "issues": ["List of specific issues or problematic phrases in this clause"]
+                    "type": "...",
+                    "content": "...",
+                    "analysis": "...",
+                    "issues": ["..."]
                 }}
             ],
-            "overall_assessment": "An overall assessment of the contract, including major strengths and weaknesses"
+            "overall_assessment": "..."
         }}
+        Only return JSON without any extra explanation.
         """
 
         response = self.client.chat.completions.create(
@@ -66,17 +78,24 @@ class LLMIntegration:
             temperature=0.2,
             max_tokens=4000,
         )
-        
-        # Check and log the response before attempting to parse it
+
         try:
             response_content = response.choices[0].message.content
-            print("API Response:", response_content)  # Debugging: Log the response content
-            parsed_response = json.loads(response_content)  # Attempt to parse the response
-            return parsed_response  # Return the parsed response if successful
-        except (AttributeError, KeyError, json.JSONDecodeError) as e:
-            print(f"Error parsing response: {e}")  # Log any errors encountered
-            print("Raw API Response:", response)   # Log the raw response for further debugging
-            return None  # Return None or handle the error as needed
+            print("\nRaw API Response:\n", response_content)  # Print full response
+            parsed = self._extract_json(response_content)
+            if parsed:
+                return parsed
+            else:
+                return {
+                    "error": "Failed to extract valid JSON.",
+                    "raw_response": response_content
+                }
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return {
+                "error": str(e),
+                "raw_response": str(response)
+            }
 
     def get_followup_analysis(self, question, context):
         prompt = f"""
@@ -88,17 +107,18 @@ class LLMIntegration:
 
         Please provide your response in the following JSON format:
         {{
-            "answer": "Your answer to the question",
-            "explanation": "An explanation or justification for your answer",
+            "answer": "...",
+            "explanation": "...",
             "law_references": [
                 {{
-                    "law": "The specific law referenced",
-                    "section": "The relevant section number",
-                    "compliance_status": "Compliant/Non-Compliant",
-                    "details": "Detailed explanation of compliance or non-compliance"
+                    "law": "...",
+                    "section": "...",
+                    "compliance_status": "...",
+                    "details": "..."
                 }}
             ]
         }}
+        Only return JSON. No extra explanations.
         """
 
         response = self.client.chat.completions.create(
@@ -110,13 +130,22 @@ class LLMIntegration:
             temperature=0.2,
             max_tokens=1000,
         )
-        
-        # Check and log the response before attempting to parse it
+
         try:
             response_content = response.choices[0].message.content
-            print("API Response:", response_content)  # Debugging: Log the response content
-            return json.loads(response_content)  # Attempt to parse the response
-        except (AttributeError, KeyError, json.JSONDecodeError) as e:
-            print(f"Error parsing response: {e}")  # Log any errors encountered
-            print("Raw API Response:", response)   # Log the raw response for further debugging
-            return None  # Return None or handle the error as needed
+            print("\nRaw API Response:\n", response_content)  # Debug print
+            parsed = self._extract_json(response_content)
+            if parsed:
+                return parsed
+            else:
+                return {
+                    "error": "Failed to extract valid JSON.",
+                    "raw_response": response_content
+                }
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return {
+                "error": str(e),
+                "raw_response": str(response)
+            }
+
