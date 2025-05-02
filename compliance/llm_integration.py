@@ -70,9 +70,9 @@ class LLMIntegration:
         """
 
         response = self.client.chat.completions.create(
-            model="llama-guard-3-8b",
-            # model="mixtral-8x7b-32768",
-            # model="llama3-70b-8192",
+            # model="llama-guard-3-8b",
+            model = "llama3-70b-8192"  # Groq supports this
+
             messages=[
                 {"role": "system", "content": "You are an AI legal assistant specialized in contract analysis and compliance with Indian laws."},
                 {"role": "user", "content": prompt}
@@ -124,7 +124,8 @@ class LLMIntegration:
         """
 
         response = self.client.chat.completions.create(
-            model="mixtral-8x7b-32768",
+            # model="mixtral-8x7b-32768",
+            model = "llama3-70b-8192"  # Groq supports this
             messages=[
                 {"role": "system", "content": "You are an AI legal assistant specialized in contract analysis and compliance with Indian laws."},
                 {"role": "user", "content": prompt}
