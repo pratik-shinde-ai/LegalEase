@@ -23,7 +23,7 @@ def load_module(module_name):
 
 # Import the app modules
 summary_app = load_module("summary.app")
-compliance_app = load_module("compliance.app")
+# compliance_app = load_module("compliance.app")
 drafting_app = load_module("drafting.app")
 
 def main():
@@ -58,8 +58,8 @@ def main():
     
     elif st.session_state.page == "Summary":
         run_subapp(summary_app, "Summary")
-    elif st.session_state.page == "Compliance":
-        run_subapp(compliance_app, "Compliance")
+    # elif st.session_state.page == "Compliance":
+    #     run_subapp(compliance_app, "Compliance")
     elif st.session_state.page == "Drafting":
         run_subapp(drafting_app, "Drafting")
     
