@@ -41,8 +41,8 @@ def main():
         st.session_state.page = "Home"
     if st.sidebar.button("Summary"):
         st.session_state.page = "Summary"
-    if st.sidebar.button("Compliance"):
-        st.session_state.page = "Compliance"
+    # if st.sidebar.button("Compliance"):
+    #     st.session_state.page = "Compliance"
     if st.sidebar.button("Drafting"):
         st.session_state.page = "Drafting"
 
@@ -53,7 +53,7 @@ def main():
         # Display service descriptions on home page
         st.write("### Our Services:")
         st.write("**Summary**: Get comprehensive summaries of legal documents")
-        st.write("**Compliance**: Check and ensure legal compliance")
+        # st.write("**Compliance**: Check and ensure legal compliance")
         st.write("**Drafting**: Draft legal documents with assistance")
     
     elif st.session_state.page == "Summary":
